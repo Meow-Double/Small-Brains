@@ -91,7 +91,7 @@
     align-items: center;
     gap: 1vh;
   }
-
+ 
   &__input{
     width: 70%;
     height: 6vh;
@@ -101,6 +101,10 @@
     border: 1px solid rgb(255, 255, 255);
     text-align: center;
   }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 
   &__btn{
     width: 70%;
