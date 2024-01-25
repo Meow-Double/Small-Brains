@@ -1,3 +1,17 @@
+// import {debounce} from "../utils/debounce.mjs";
+// const {debounce} = require('../utils/debounce.js');
+
+
+function debounce(func, timeout = 300){
+    let timer;
+    return (...args) => {
+      clearTimeout(timer);
+      timer = setTimeout(() => { func.apply(this, args); }, timeout);
+    };
+  };
+
+
+  
 //modal
 let modal = document.querySelector(".modal"),
     openModalBtn = document.querySelectorAll(["[data-openModal]"]),
@@ -38,13 +52,41 @@ function boxAnimate() {
     })
 }
 
+// function showModalByScroll() {
+//     if (window.scrollY >= animBox.offsetHeight - window.innerHeight) {
+//         boxAnimate();
+//         window.removeEventListener('scroll', showModalByScroll);
+//     }
+// }
+
+
+// window.addEventListener('scroll', showModalByScroll);
+
+
+
 function showModalByScroll() {
-    if (window.scrollY >= animBox.offsetHeight - window.innerHeight) {
-        boxAnimate();
-        window.removeEventListener('scroll', showModalByScroll);
+    if (window.scrollY > animBox.getBoundingClientRect().top) {
+          boxAnimate();
+      window.removeEventListener('scroll', showModalByScroll);
+      return null;
+    }else{
+      console.log("s")
+      window.addEventListener('scroll', debounce(showModalByScroll), 200);
     }
-}
+  }
+  
+  showModalByScroll();
 
+//   function debounce(func, timeout = 300){
+//     let timer;
+//     return (...args) => {
+//       clearTimeout(timer);
+//       timer = setTimeout(() => { func.apply(this, args); }, timeout);
+//     };
+//   }
 
-window.addEventListener('scroll', showModalByScroll);
+//   function saveInput(){
+//     console.log('Saving data');
+//   }
+
 
