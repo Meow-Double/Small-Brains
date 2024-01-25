@@ -26,3 +26,25 @@ window.addEventListener("keydown", (e) => {
         closeModal();
     }
 })
+
+//animation
+
+let animItems = document.querySelectorAll('.jobs__item');
+animBox = document.querySelector('.jobs__body');
+
+function boxAnimate() {
+    animItems.forEach((item) => {
+        item.classList.add("jobs__item_animate");
+    })
+}
+
+function showModalByScroll() {
+    if (window.scrollY >= animBox.offsetHeight - window.innerHeight) {
+        boxAnimate();
+        window.removeEventListener('scroll', showModalByScroll);
+    }
+}
+
+
+window.addEventListener('scroll', showModalByScroll);
+
