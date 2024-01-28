@@ -1,326 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-    <!-- <script type="module" src="./utils/debounce.js" defer></script> -->
-    <script src="https://kit.fontawesome.com/f7ee122532.js" crossorigin="anonymous" defer></script>
-  </head>
 
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="container">
-          <div class="header__body">
-            <img src="img/logo.png" class="header__logo" alt="logo" />
-            <div class="header__links">
-              <a href="#" class="header__link">Home</a>
-              <div class="header__dropdown">
-                <button class="header__dropbtn">About Us ᨆ</button>
-                <ul class="header__dropdown-content">
-                  <li><a href="#" class="header__link">Us projects</a></li>
-                  <li><a href="#" class="header__link">Our team</a></li>
-                  <li><a href="#" class="header__link">Our clients</a></li>
-                </ul>
-              </div>
-              <div class="header__dropdown">
-                <button class="header__dropbtn">Servises ᨆ</button>
-                <ul class="header__dropdown-content">
-                  <li><a href="#" class="header__link">Courses</a></li>
-                  <li><a href="#" class="header__link" data-openModal>Consult</a></li>
-                  <li><a href="#" class="header__link" data-openModal>Help</a></li>
-                </ul>
-              </div>
-              <div class="header__dropdown">
-                <button class="header__dropbtn">Pages ᨆ</button>
-                <ul class="header__dropdown-content">
-                  <li><a href="#" class="header__link">Our Courses</a></li>
-                  <li><a href="#" class="header__link">Technology</a></li>
-                  <li><a href="#" class="header__link">Prices</a></li>
-                </ul>
-              </div>
-              <a href="#" class="header__link">Contact Us</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <!-- <script type="module" src="./utils/debounce.js" defer></script> -->
+  <script src="https://kit.fontawesome.com/f7ee122532.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__body">
+          <img src="img/logo.png" class="header__logo" alt="logo" />
+          <div class="header__links">
+            <a href="#" class="header__link">Home</a>
+            <div class="header__dropdown">
+              <button class="header__dropbtn">About Us ᨆ</button>
+              <ul class="header__dropdown-content">
+                <li><a href="#" class="header__link">Us projects</a></li>
+                <li><a href="#" class="header__link">Our team</a></li>
+                <li><a href="#" class="header__link">Our clients</a></li>
+              </ul>
             </div>
+            <div class="header__dropdown">
+              <button class="header__dropbtn">Servises ᨆ</button>
+              <ul class="header__dropdown-content">
+                <li><a href="#" class="header__link">Courses</a></li>
+                <li><a href="#" class="header__link" data-openModal>Consult</a></li>
+                <li><a href="#" class="header__link" data-openModal>Help</a></li>
+              </ul>
+            </div>
+            <div class="header__dropdown">
+              <button class="header__dropbtn">Pages ᨆ</button>
+              <ul class="header__dropdown-content">
+                <li><a href="#" class="header__link">Our Courses</a></li>
+                <li><a href="#" class="header__link">Technology</a></li>
+                <li><a href="#" class="header__link">Prices</a></li>
+              </ul>
+            </div>
+            <a href="#" class="header__link">Contact Us</a>
           </div>
-        </div>
-      </header>
-
-      <div class="modal">
-        <div class="modal__content">
-          <div class="modal__close" data-closeModal>&times;</div>
-          <h1 class="modal__title">We will get back to you as soon as possible</h1>
-          <form class="modal__form">
-            <input required type="text" class="modal__input" placeholder="Your name" />
-            <input required type="email" class="modal__input" placeholder="Your email" />
-            <input required type="number" class="modal__input" placeholder="Your phone" />
-            <button class="modal__btn" type="submit">Submit</button>
-          </form>
         </div>
       </div>
+    </header>
 
-      <main class="main">
-        <section class="home">
-          <div class="container">
-            <div class="home__body">
-              <div class="home__left">
-                <h1 class="home__title">
-                  WE WILL TRAIN YOU FROM ZERO TO ADVANCED LEVEL IN A SHORT TIME
-                </h1>
-                <p class="home__text">
-                  We are a team with many years of experience.We will teach you everything from
-                  scratch to an advanced level.Confirmation of our skills by our students who have
-                  already graduated.
-                </p>
-                <button class="home__btn">Get Started</button>
-              </div>
+    <div class="modal">
+      <div class="modal__content">
+        <div class="modal__close" data-closeModal>&times;</div>
+        <h1 class="modal__title">We will get back to you as soon as possible</h1>
+        <form class="modal__form">
+          <input required type="text" class="modal__input" placeholder="Your name" />
+          <input required type="email" class="modal__input" placeholder="Your email" />
+          <input required type="number" class="modal__input" placeholder="Your phone" />
+          <button class="modal__btn" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
 
-              <div class="home__right">
-                <div class="home__icons">
-                  <img src="img/line.png" class="home__line" alt="line" />
-                  <a href="#" target="_blank" class="home__icon">
-                    <i class="fa fa-brands fa-twitter fa-2x"></i>
-                  </a>
-                  <a href="#" target="_blank" class="home__icon">
-                    <i class="fa-brands fa-youtube fa-2x"></i>
-                  </a>
-                  <a href="#" target="_blank" class="home__icon">
-                    <i class="fa-brands fa-instagram fa-2x"></i>
-                  </a>
-                  <a href="#" target="_blank" class="home__icon">
-                    <i class="fa-brands fa-discord fa-2x"></i>
-                  </a>
-                  <img src="img/line.png" class="home__line" alt="line" />
-                </div>
+    <main class="main">
+      <section class="home">
+        <div class="container">
+          <div class="home__body">
+            <div class="home__left">
+              <h1 class="home__title">
+                WE WILL TRAIN YOU FROM ZERO TO ADVANCED LEVEL IN A SHORT TIME
+              </h1>
+              <p class="home__text">
+                We are a team with many years of experience.We will teach you everything from
+                scratch to an advanced level.Confirmation of our skills by our students who have
+                already graduated.
+              </p>
+              <button class="home__btn">Get Started</button>
+            </div>
+
+            <div class="home__right">
+              <div class="home__icons">
+                <img src="img/line.png" class="home__line" alt="line" />
+                <a href="#" target="_blank" class="home__icon">
+                  <i class="fa fa-brands fa-twitter fa-2x"></i>
+                </a>
+                <a href="#" target="_blank" class="home__icon">
+                  <i class="fa-brands fa-youtube fa-2x"></i>
+                </a>
+                <a href="#" target="_blank" class="home__icon">
+                  <i class="fa-brands fa-instagram fa-2x"></i>
+                </a>
+                <a href="#" target="_blank" class="home__icon">
+                  <i class="fa-brands fa-discord fa-2x"></i>
+                </a>
+                <img src="img/line.png" class="home__line" alt="line" />
               </div>
             </div>
           </div>
-        </section>
-        <section class="form">
-          <div class="container">
-            <div class="form__inner">
-              <h2 class="form__title">Need work remotly? And get discount for new memberes</h2>
-              <p class="form__subtitle">Regestration your email now!</p>
-              <form class="form__block">
-                <input class="form__input" type="text" placeholder="Name" />
-                <input class="form__input" type="text" placeholder="Email" />
-                <input class="form__input" type="text" placeholder="Country" />
-                <button class="form__button">Join now</button>
+        </div>
+      </section>
+      <section class="form">
+        <div class="container">
+          <div class="form__inner">
+            <h2 class="form__title">Need work remotly? And get discount for new memberes</h2>
+            <p class="form__subtitle">Regestration your email now!</p>
+            <form class="form__block">
+              <input class="form__input" type="text" placeholder="Name" />
+              <input class="form__input" type="text" placeholder="Email" />
+              <input class="form__input" type="text" placeholder="Country" />
+              <button class="form__button">Join now</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="our-profile">
+        <div class="container">
+          <div class="our-profile__inner">
+            <div class="our-profile__images">
+              <div class="our-profile__images-info">
+                <!-- <img class="our-profile__images-plus" src="./img/plus.svg" alt="plus icon"> -->
+                <h2 class="our-profile__images-number">15</h2>
+                <p class="our-profile__images-title">year expirience</p>
+              </div>
+              <img
+                src="https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="our profiles images" />
+            </div>
+            <div class="our-profile__info">
+              <h3 class="our-profile__subtitle subtitle">Our profile</h3>
+              <h2 class="our-profile__title title">
+                50.000 user join the classes and successfull
+              </h2>
+              <p class="our-profile__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ad.
+                Voluptate ea perferendis aperiam aliquid cum soluta ipsam qui. Architecto incidunt
+                delectus eos sequi? Rem, eos. Adipisci facere pariatur cumque.
+              </p>
+              <div class="our-profile__info-blocks">
+                <div class="our-profile__info-block">
+                  <img class="our-profile__block-img" src="./img/profile-vision.png" alt="profile vision images" />
+                  <h3 class="our-profile__block-title">Our vision</h3>
+                  <p class="our-profile__block-text">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="our-profile__info-block">
+                  <img class="our-profile__block-img" src="./img/profile-mision.png" alt="profile mision images" />
+                  <h3 class="our-profile__block-title">Our mision</h3>
+                  <p class="our-profile__block-text">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+              </div>
+              <button class="our-profile__info-btn">Get started</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="our-service">
+        <div class="container">
+          <ul class="our-service__inner">
+            <li>
+              <h4 class="our-service__subtitle subtitle">Our service</h4>
+              <h2 class="our-service__title title">weprovide the best services</h2>
+              <p class="our-service__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab sint quibusdam aut.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </li>
+            <li class="our-service__card">
+              <div class="our-service__title-block">
+                <img class="our-service__card-img" src="./img/service-consultation.png"
+                  alt="service consultation image" />
+                <h3 class="our-service__card-title">Free consultation</h3>
+              </div>
+              <p class="our-service__card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, consequatur omnis?
+                Soluta, aliquam officia.
+              </p>
+              <a class="our-service__card-link" href="#!">Read more
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 15 15">
+                    <path fill="currentColor"
+                      d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414" />
+                  </svg></span>
+              </a>
+            </li>
+            <li class="our-service__card">
+              <div class="our-service__title-block">
+                <img class="our-service__card-img" src="./img/service-coach.webp" alt="" />
+                <h3 class="our-service__card-title">Experience coach</h3>
+              </div>
+              <p class="our-service__card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, consequatur omnis?
+                Soluta, aliquam officia.
+              </p>
+              <a class="our-service__card-link" href="#!">Read more
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 15 15">
+                    <path fill="currentColor"
+                      d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414" />
+                  </svg></span>
+              </a>
+            </li>
+            <li class="our-service__card">
+              <div class="our-service__title-block">
+                <img class="our-service__card-img" src="./img/service-time.png" alt="" />
+                <h3 class="our-service__card-title">Flexible time</h3>
+              </div>
+              <p class="our-service__card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, consequatur omnis?
+                Soluta, aliquam officia.
+              </p>
+              <a class="our-service__card-link" href="#!">Read more
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 15 15">
+                    <path fill="currentColor"
+                      d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414" />
+                  </svg></span>
+              </a>
+            </li>
+            <li class="our-service__card">
+              <div class="our-service__title-block">
+                <img class="our-service__card-img" src="./img/service-certificate.png" alt="" />
+                <h3 class="our-service__card-title">Get certificate</h3>
+              </div>
+              <p class="our-service__card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, consequatur omnis?
+                Soluta, aliquam officia.
+              </p>
+              <a class="our-service__card-link" href="#!">Read more
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 15 15">
+                    <path fill="currentColor"
+                      d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414" />
+                  </svg></span>
+              </a>
+            </li>
+            <li class="our-service__card">
+              <div class="our-service__title-block">
+                <img class="our-service__card-img" src="./img/service-job.webp" alt="" />
+                <h3 class="our-service__card-title">get job quickly</h3>
+              </div>
+              <p class="our-service__card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, consequatur omnis?
+                Soluta, aliquam officia.
+              </p>
+              <a class="our-service__card-link" href="#!">Read more
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 15 15">
+                    <path fill="currentColor"
+                      d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414" />
+                  </svg></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="jobs">
+        <div class="container">
+          <p class="jobs__title">Where do our alumni work</p>
+          <div class="jobs__body">
+            <img src="img/jobsItem1.png" class="jobs__item" alt="google" />
+            <img src="img/jobsItem3.png" class="jobs__item jobs__item_big" alt="google" />
+            <img src="img/jobsItem2.png" class="jobs__item" alt="google" />
+            <img src="img/jobsItem4.png" class="jobs__item jobs__item_big" alt="google" />
+            <img src="img/jobsItem5.png" class="jobs__item" alt="google" />
+          </div>
+        </div>
+      </section>
+      <section class="chat">
+        <div class="container">
+          <div class="chat__body">
+            <button class="chat__btn " data-openChat type="button"></button>
+            <button class="chat__btn chat__btn_close " data-closeChat type="button"></button>
+            <div class="chat__content">
+              <div class="chat__header">
+                <h3 class="chat__title">SmallBrains</h3>
+                <p class="chat__subtitle">Online chat</p>
+                <div class="chat__close" data-closeChat>&times;</div>
+              </div>
+              <div class="chat__messages">
+                <div class="chat__message">
+                  <img src="img/logotip.png" alt="avatar" class="chat__message-avatar" />
+                  <div class="chat__message__body">
+                    <h3 class="chat__message__text">Hello! What question are you interested in?</h3>
+                  </div>
+                </div>
+
+              </div>
+              <form class="chat__form">
+                <input type="text" class="chat__input" placeholder="Enter your message..." />
+                <button class="chat__btn__send" data-send type="button">
+                  <svg width="70" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.48452 5.51167C9.2599 4.92067 10.3081 4.83432 11.1698 5.29047L53.6698 27.7905C54.4883 28.2237 55 29.074 55 30C55 30.926 54.4883 31.7762 53.6698 32.2095L11.1698 54.7095C10.3081 55.1655 9.2599 55.0792 8.48452 54.4882C7.70915 53.8972 7.34807 52.9092 7.55957 51.9577L12.439 30L7.55957 8.04227C7.34807 7.09055 7.70915 6.1027 8.48452 5.51167ZM17.0055 32.5L13.6149 47.7575L42.4348 32.5H17.0055ZM42.4348 27.5H17.0055L13.6149 12.2424L42.4348 27.5Z"
+                      fill="black" />
+                  </svg>
+                </button>
               </form>
             </div>
           </div>
-        </section>
-        <section class="our-profile">
-          <div class="container">
-            <div class="our-profile__inner">
-              <div class="our-profile__images">
-                <div class="our-profile__images-info">
-                  <!-- <img class="our-profile__images-plus" src="./img/plus.svg" alt="plus icon"> -->
-                  <h2 class="our-profile__images-number">15</h2>
-                  <p class="our-profile__images-title">year expirience</p>
-                </div>
-                <img
-                  src="https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="our profiles images"
-                />
-              </div>
-              <div class="our-profile__info">
-                <h3 class="our-profile__subtitle subtitle">Our profile</h3>
-                <h2 class="our-profile__title title">
-                  50.000 user join the classes and successfull
-                </h2>
-                <p class="our-profile__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ad.
-                  Voluptate ea perferendis aperiam aliquid cum soluta ipsam qui. Architecto incidunt
-                  delectus eos sequi? Rem, eos. Adipisci facere pariatur cumque.
-                </p>
-                <div class="our-profile__info-blocks">
-                  <div class="our-profile__info-block">
-                    <img
-                      class="our-profile__block-img"
-                      src="./img/profile-vision.png"
-                      alt="profile vision images"
-                    />
-                    <h3 class="our-profile__block-title">Our vision</h3>
-                    <p class="our-profile__block-text">Lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <div class="our-profile__info-block">
-                    <img
-                      class="our-profile__block-img"
-                      src="./img/profile-mision.png"
-                      alt="profile mision images"
-                    />
-                    <h3 class="our-profile__block-title">Our mision</h3>
-                    <p class="our-profile__block-text">Lorem ipsum dolor sit amet consectetur.</p>
-                  </div>
-                </div>
-                <button class="our-profile__info-btn">Get started</button>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="our-service">
-          <div class="container">
-            <ul class="our-service__inner">
-              <li>
-                <h4 class="our-service__subtitle subtitle">Our service</h4>
-                <h2 class="our-service__title title">weprovide the best services</h2>
-                <p class="our-service__text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab sint quibusdam aut.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-              </li>
-              <li class="our-service__card">
-                <div class="our-service__title-block">
-                  <img
-                    class="our-service__card-img"
-                    src="./img/service-consultation.png"
-                    alt="service consultation image"
-                  />
-                  <h3 class="our-service__card-title">Free consultation</h3>
-                </div>
-                <p class="our-service__card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, consequatur omnis?
-                  Soluta, aliquam officia.
-                </p>
-                <a class="our-service__card-link" href="#!"
-                  >Read more
-                  <span
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 15 15"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
-                      /></svg
-                  ></span>
-                </a>
-              </li>
-              <li class="our-service__card">
-                <div class="our-service__title-block">
-                  <img class="our-service__card-img" src="./img/service-coach.webp" alt="" />
-                  <h3 class="our-service__card-title">Experience coach</h3>
-                </div>
-                <p class="our-service__card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, consequatur omnis?
-                  Soluta, aliquam officia.
-                </p>
-                <a class="our-service__card-link" href="#!"
-                  >Read more
-                  <span
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 15 15"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
-                      /></svg
-                  ></span>
-                </a>
-              </li>
-              <li class="our-service__card">
-                <div class="our-service__title-block">
-                  <img class="our-service__card-img" src="./img/service-time.png" alt="" />
-                  <h3 class="our-service__card-title">Flexible time</h3>
-                </div>
-                <p class="our-service__card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, consequatur omnis?
-                  Soluta, aliquam officia.
-                </p>
-                <a class="our-service__card-link" href="#!"
-                  >Read more
-                  <span
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 15 15"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
-                      /></svg
-                  ></span>
-                </a>
-              </li>
-              <li class="our-service__card">
-                <div class="our-service__title-block">
-                  <img class="our-service__card-img" src="./img/service-certificate.png" alt="" />
-                  <h3 class="our-service__card-title">Get certificate</h3>
-                </div>
-                <p class="our-service__card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, consequatur omnis?
-                  Soluta, aliquam officia.
-                </p>
-                <a class="our-service__card-link" href="#!"
-                  >Read more
-                  <span
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 15 15"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
-                      /></svg
-                  ></span>
-                </a>
-              </li>
-              <li class="our-service__card">
-                <div class="our-service__title-block">
-                  <img class="our-service__card-img" src="./img/service-job.webp" alt="" />
-                  <h3 class="our-service__card-title">get job quickly</h3>
-                </div>
-                <p class="our-service__card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, consequatur omnis?
-                  Soluta, aliquam officia.
-                </p>
-                <a class="our-service__card-link" href="#!"
-                  >Read more
-                  <span
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 15 15"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
-                      /></svg
-                  ></span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="jobs">
-          <div class="container">
-            <p class="jobs__title">Where do our alumni work</p>
-            <div class="jobs__body">
-              <img src="img/jobsItem1.png" class="jobs__item" alt="google" />
-              <img src="img/jobsItem3.png" class="jobs__item jobs__item_big" alt="google" />
-              <img src="img/jobsItem2.png" class="jobs__item" alt="google" />
-              <img src="img/jobsItem4.png" class="jobs__item jobs__item_big" alt="google" />
-              <img src="img/jobsItem5.png" class="jobs__item" alt="google" />
-            </div>
-          </div>
-        </section>
-      </main>
+        </div>
+      </section>
 
-      <footer class="footer"></footer>
-    </div>
+    </main>
 
-    <script src="js/main.min.js"></script>
-  </body>
+    <footer class="footer"></footer>
+  </div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>
