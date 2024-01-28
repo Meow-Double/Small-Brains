@@ -11,7 +11,7 @@ function debounce(func, timeout = 300){
   };
 
 
-  
+
 //modal
 let modal = document.querySelector(".modal"),
     openModalBtn = document.querySelectorAll(["[data-openModal]"]),
@@ -70,23 +70,11 @@ function showModalByScroll() {
       window.removeEventListener('scroll', showModalByScroll);
       return null;
     }else{
-      console.log("s")
       window.addEventListener('scroll', debounce(showModalByScroll), 200);
     }
   }
   
   showModalByScroll();
 
-//   function debounce(func, timeout = 300){
-//     let timer;
-//     return (...args) => {
-//       clearTimeout(timer);
-//       timer = setTimeout(() => { func.apply(this, args); }, timeout);
-//     };
-//   }
-
-//   function saveInput(){
-//     console.log('Saving data');
-//   }
 
 
