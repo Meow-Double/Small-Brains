@@ -83,16 +83,19 @@ const chat = document.querySelector(".chat__content"),
     openBtn = document.querySelector("[data-openChat]"),
     closeBtn = document.querySelectorAll("[data-closeChat]"),
     chatInput = document.querySelector(".chat__input"),
-    inputBtn = document.querySelector("[data-send]");
+    inputBtn = document.querySelector("[data-send]"),
+    buttonsBox = document.querySelector(".chat__buttons");
 
 
 function openChat() {
     chat.style.display = "block";
     openBtn.style.zIndex = "-2";
+    buttonsBox.style.animation = "none";
 }
 function closeChat() {
     chat.style.display = "none";
     openBtn.style.zIndex = "";
+    buttonsBox.style.animation = "puls 2s infinite ease-in-out";
 }
 
 openBtn.addEventListener("click", openChat);
@@ -135,5 +138,94 @@ window.addEventListener("keydown", (e) => {
     }
 })
 
+
+
+//courses carts
+
+const coursesBox = document.querySelector(".courses__content");
+
+class CreateCoursesCart {
+    constructor(src, alt, time, level, title, subtitle) {
+        this.src = src;
+        this.alt = alt;
+        this.time = time;
+        this.level = level;
+        this.title = title;
+        this.subtitle = subtitle;
+    }
+
+    render() {
+        let element = document.createElement("div")
+        element.classList.add("courses__item")
+        element.innerHTML = `
+        <img class="courses__img" src=${this.src} alt=${this.alt}>
+                <div class="courses__info">
+                  <h3 class="courses__time">${this.time}</h3>
+                  <h3 class="courses__level">${this.level}</h3>
+                </div>
+                <div class="courses__texts-block">
+                  <h3 class="courses__title">${this.title}</h3>
+                  <p class="courses__subtitle">${this.subtitle}</p>
+                  </p>
+                  <button class="courses__btn-big">Learn more</button>
+                </div>
+        `
+        coursesBox.append(element);
+    }
+}
+
+new CreateCoursesCart(
+    "img/coursesFront.jpeg",
+    "frontend",
+    "9 months",
+    "Beginner",
+    "Frontend developer",
+    "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.",
+).render();
+
+new CreateCoursesCart(
+    "img/coursesBack.jpeg",
+    "BackEnd",
+    "12 months",
+    "Advanced",
+    "Backend developer",
+    "The backend development course provides a complete immersion in the world of the back-end side of web applications.",
+).render();
+
+new CreateCoursesCart(
+    "img/coursesFullstack.jpg",
+    "Fullstack",
+    "24 months",
+    "Advanced",
+    "Fullstack developer",
+    "The Fullstack development course provides a complete immersion in the world of the back-end and front-end web applications.",
+).render();
+
+new CreateCoursesCart(
+    "img/cousesDevops.jpg",
+    "DevOps",
+    "15 months",
+    "Advanced",
+    "DevOps",
+    "The DevOps course provides a thorough understanding of the principles and practices aimed at improving collaboration between developers and the operations team."
+).render();
+
+new CreateCoursesCart(
+    "img/coursesGameDev.png",
+    "GameDev",
+    "9 months",
+    "Beginner",
+    "Game developer",
+    "The Fundamentals of Game Development with C#, Unity, and C++ course provides students with a unique opportunity to learn fundamental skills in game creation"
+).render();
+
+new CreateCoursesCart(
+    "img/coursesData.jpg",
+    "Data Science",
+    "24 months",
+    "Advanced",
+    "Data Science",
+    "The Data Science course provides students with a unique opportunity to learn fundamental skills in data science and machine learning"
+).render();
 
 
