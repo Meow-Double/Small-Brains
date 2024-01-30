@@ -525,6 +525,7 @@
   position: fixed;
   bottom: 1vh;
   right: 3vh;
+  z-index: 1000;
 
 &__buttons{
   position: absolute;
@@ -536,6 +537,23 @@
   background-color: rgb(0, 0, 0);
   z-index: -1;
   animation: puls 1.5s infinite ease-in-out;
+}
+&__notification{
+  position: absolute;
+  bottom: 6vh;
+  right: 5px;
+  width: 3vh;
+  height: 3vh;
+  border-radius: 50%;
+  background-color: rgb(255, 0, 0);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  color: #fff;
+  font-size: 2vh;
+  box-shadow: 0 0 10px #ff0000;
+  transition: all 0.3s ease-in-out;
 }
 &__btn{
   position: absolute;
@@ -806,5 +824,121 @@
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
   }
+}
+}
+
+.teachers{
+  width: 100%;
+  height: 70vh;
+
+&__body{
+  width: 100%;
+  height: 70vh;
+  margin-top: 5vh;
+  position: relative;
+}
+&__title{
+  color: rgb(0, 0, 0);
+  font-size: 6vh;
+}
+&__content{
+  width: 100%;
+  height: 57vh;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+&__img{
+  width: 45vh;
+  height: 55vh;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+}
+&__list{
+  position: absolute;
+  left: 48vh;
+  bottom: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 1vh;
+}
+&__name{
+  font-size: 18px;
+  list-style: disc;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover{
+    font-size: 25px;
+    }
+  }
+
+&__name-active{
+  font-size: 25px;
+}
+&__info{
+  width: 40%;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  color: #000;
+}
+&__name-big{
+  color: rgb(0, 0, 0);
+  font-size: 5vh;
+}
+&__text{
+  color: rgb(0, 0, 0);
+  font-size: 3vh;
+}&__links{
+  align-self: end;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+&__icon{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.3s;
+    animation: rotate 2s infinite;
+
+    &:hover{
+      animation: none;
+    }
+}
+@keyframes rotate {
+  0%{
+    transform: none;
+  }
+  50%{
+    transform: translate(0, -5px);
+  }
+  100%{
+    transform: none
+    ;
+  }
+}
+.fade{
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+@keyframes fade{
+  from{opacity: 0.5;}
+  to{opacity: 1;}
+}
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
 }
 }

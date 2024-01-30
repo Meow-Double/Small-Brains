@@ -78,19 +78,34 @@ showModalByScroll();
 
 //chat
 
-const chat = document.querySelector(".chat__content"),
+let chat = document.querySelector(".chat__content"),
     messagesBox = document.querySelector(".chat__messages"),
     openBtn = document.querySelector("[data-openChat]"),
     closeBtn = document.querySelectorAll("[data-closeChat]"),
     chatInput = document.querySelector(".chat__input"),
     inputBtn = document.querySelector("[data-send]"),
-    buttonsBox = document.querySelector(".chat__buttons");
+    buttonsBox = document.querySelector(".chat__buttons"),
+    notification = document.querySelector(".chat__notification"),
+    audio = new Audio("../audio/message.mp3"),
+    flag = false;
+
+window.addEventListener("click", () => {
+    if(flag === false){
+        setTimeout(() => {
+            notification.style.display = "flex";
+            audio.play();
+            flag = true;
+        }, 1000);
+    }
+
+})
 
 
 function openChat() {
     chat.style.display = "block";
     openBtn.style.zIndex = "-2";
     buttonsBox.style.animation = "none";
+    notification.style.display = "none";
 }
 function closeChat() {
     chat.style.display = "none";
@@ -137,7 +152,6 @@ window.addEventListener("keydown", (e) => {
         sendMessage();
     }
 })
-
 
 
 //courses carts
@@ -229,3 +243,39 @@ new CreateCoursesCart(
 ).render();
 
 
+//tabs
+
+const tabsContent = document.querySelectorAll(".teachers__content"),
+    tabs = document.querySelectorAll(".teachers__name"),
+    tabsParent = document.querySelector(".teachers__list");
+
+function hideTabContent() {
+    tabsContent.forEach(item => {
+        item.classList.add("hide");
+        item.classList.remove("show", 'fade');
+    });
+    tabs.forEach(item => {
+        item.classList.remove("teachers__name-active");
+    })
+}
+
+function showTabContent(i = 0) {
+    tabsContent[i].classList.add("show", "fade");
+    tabsContent[i].classList.remove("hide");
+    tabs[i].classList.add("teachers__name-active");
+}
+hideTabContent();
+showTabContent();
+
+tabsParent.addEventListener("click", (event) => {
+    const target = event.target;
+    if (target && target.classList.contains("teachers__name")) {
+        tabs.forEach((item, i) => {
+            if (target == item) {
+                hideTabContent();
+                showTabContent(i);
+            }
+        })
+    }
+
+})
