@@ -90,7 +90,7 @@ let chat = document.querySelector(".chat__content"),
     flag = false;
 
 window.addEventListener("click", () => {
-    if(flag === false){
+    if (flag === false) {
         setTimeout(() => {
             notification.style.display = "flex";
             audio.play();
@@ -278,4 +278,33 @@ tabsParent.addEventListener("click", (event) => {
         })
     }
 
+})
+
+//drag&drop
+
+let zoneOne = document.querySelectorAll(".selection__box"),
+    zoneTwo = document.querySelector(".selection__items"),
+    items = document.querySelectorAll(".selection__item"),
+    box = document.querySelector(".selection");
+
+zoneOne.forEach((item) => {
+    item.ondragover = function allowDrop(e) {
+        e.preventDefault();
+    }
+    item.ondrop = function drop(e) {
+        let itemId = e.dataTransfer.getData("id");
+        e.target.append(document.getElementById(itemId));
+        console.log(zoneTwo.children.length);
+        if (zoneTwo.children.length === 0) {
+            zoneTwo.style.display = "none";
+            box.style.height = "60vh";
+            openModal();
+        }
+    }
+})
+
+items.forEach((item) => {
+    item.ondragstart = function drag(e) {
+        e.dataTransfer.setData("id", e.target.id);
+    }
 })
