@@ -300,6 +300,7 @@ zoneOne.forEach((item) => {
             box.style.height = "60vh";
             openModal();
         }
+        item.style.filter = "drop-shadow(0 0 10px rgb(0, 0, 0))";
     }
 })
 

@@ -520,7 +520,7 @@
     filter: brightness(200%);
   }
 }
-
+//------------------chat----------------
 .chat{
   position: fixed;
   bottom: 1vh;
@@ -704,7 +704,7 @@
   }
 }
 }
-
+// -------------------courses----------------
 .courses{
   width: 100%;
   height: 280vh;
@@ -826,14 +826,14 @@
   }
 }
 }
-
+// -------------------teachers----------------
 .teachers{
   width: 100%;
-  height: 70vh;
+  height: 85vh;
 
 &__body{
   width: 100%;
-  height: 70vh;
+  height: 85vh;
   margin-top: 5vh;
   position: relative;
 }
@@ -843,23 +843,23 @@
 }
 &__content{
   width: 100%;
-  height: 57vh;
+  height: 85vh;
   margin-top: 5vh;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
 }
 &__img{
-  width: 45vh;
-  height: 55vh;
+  width: 70vh;
+  height: 85vh;
   border-radius: 10px;
   border: 1px solid rgb(0, 0, 0);
 }
 &__list{
   position: absolute;
-  left: 48vh;
-  bottom: 2vh;
+  left: 74vh;
+  bottom: -12vh;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -874,16 +874,17 @@
   transition: all 0.5s;
 
   &:hover{
-    font-size: 25px;
+    text-decoration: underline;
     }
   }
 
 &__name-active{
-  font-size: 25px;
+  text-decoration: underline;
+  list-style: disc inside;
 }
 &__info{
   width: 40%;
-  height: 55vh;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -942,15 +943,21 @@
   display: none;
 }
 }
-
+// -------------------selection----------------
 .selection{
   width: 100%;
   height: 90vh;
-  margin-top: 10vh;
+  margin-top: 25vh;
 
 &__title{
   color: rgb(0, 0, 0);
-  font-size: 5vh;
+  font-size: 6vh;
+}
+&__subtitle{
+  width: 120vh;
+  color: rgb(0, 0, 0);
+  font-size: 2vh;
+  margin-top: 2vh;
 }
 
 &__body{
@@ -959,14 +966,15 @@
 
 &__content{
   width: 100%;
-  margin-top: 7vh;
+  margin-top: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 10vh;
-  padding: 10px;
+  padding: 30px;
   border-radius: 10px;
+  background-color: rgb(226, 225, 225);
 }
 &__head{
   width: 100%;
@@ -979,14 +987,17 @@
 &__box{
   width: 70vh;
   height: 55vh;
-  box-shadow: 1px 1px 1px rgb(157, 157, 157);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
   background-image: url(/img/selectionOne.jpg);
   background-position: center;
   background-size: cover;
+  transition: all 0.3s;
   display: flex;
   align-items: start;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 10px;
   gap: 4vh;
 }
 &__box--two{
@@ -1003,13 +1014,23 @@
   flex-direction: row;
   align-items: start;
   gap: 5vh;
-  box-shadow: 1px 1px 1px rgb(157, 157, 157);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
 }
 &__item{
   font-size: 4vh;
   color: rgb(0, 0, 0);
   padding: 5px;
-  border:#000 1px solid;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  transition: all 0.3s;
+  border-radius: 10px;
   cursor: pointer;
+
+  &:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
 }
 }
