@@ -1195,6 +1195,41 @@
   }
 }
 
+// ----------------Info
+
+.info {
+  margin-top: 80px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+
+  &__bg {
+    padding-block: 80px;
+    backdrop-filter: brightness(40%);
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  &__title--select {
+    color: #d2ac6e;
+  }
+  &__text{
+    font-size: 18px;
+  }
+}
 // --------Footer
 .footer {
   width: 100%;
