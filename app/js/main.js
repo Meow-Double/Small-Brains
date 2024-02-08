@@ -15,16 +15,17 @@ function debounce(func, timeout = 300) {
 //modal
 let modal = document.querySelector(".modal"),
     openModalBtn = document.querySelectorAll(["[data-openModal]"]),
-    closeModalBtn = document.querySelector("[data-closeModal]");
+    closeModalBtn = document.querySelector("[data-closeModal]"),
+    body = document.querySelector("body");
 
 
 function openModal() {
     modal.style.display = "block";
-    modal.style.overflow = "hidden";
+    body.style.overflow = "hidden";
 }
 function closeModal() {
     modal.style.display = "none";
-    modal.style.overflow = "";
+    body.style.overflow = "";
 }
 
 openModalBtn.forEach((el) => el.addEventListener("click", openModal));
@@ -297,7 +298,6 @@ zoneOne.forEach((item) => {
         console.log(zoneTwo.children.length);
         if (zoneTwo.children.length === 0) {
             zoneTwo.style.display = "none";
-            box.style.height = "60vh";
             openModal();
         }
         item.style.filter = "drop-shadow(0 0 10px rgb(0, 0, 0))";

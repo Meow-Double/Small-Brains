@@ -6,7 +6,6 @@
 
 .header {
   width: 100%;
-  height: 10vh;
   position: absolute;
   &__body {
     width: 100%;
@@ -64,7 +63,6 @@
   z-index: 1050;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.7);
 
   &__content {
@@ -142,7 +140,7 @@
 
 //main
 .home {
-  background-image: url('https://images.pexels.com/photos/6804581/pexels-photo-6804581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-image: url('https://wallpaperaccess.com/full/1109805.jpg');
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -478,12 +476,11 @@
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 30vh;
   position: relative;
+  padding: 50px;
 
   &__body {
     width: 100%;
-    height: 30vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -703,12 +700,11 @@
 // -------------------courses----------------
 .courses {
   width: 100%;
-  height: 280vh;
   background-color: rgb(255, 255, 255);
+  padding-bottom: 135vh;
 
   &__body {
     width: 100%;
-    height: 280vh;
     margin-top: 15vh;
   }
 
@@ -826,10 +822,9 @@
 .teachers {
   width: 100%;
   // height: 85vh;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   &__body {
     width: 100%;
-    height: 85vh;
     margin-top: 5vh;
     position: relative;
   }
@@ -855,7 +850,7 @@
   &__list {
     position: absolute;
     left: 74vh;
-    bottom: -12vh;
+    bottom: 0vh;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -946,8 +941,7 @@
 // -------------------selection----------------
 .selection {
   width: 100%;
-  height: 90vh;
-  margin-top: 25vh;
+  margin-top: 10vh;
 
   &__title {
     color: rgb(0, 0, 0);
@@ -962,7 +956,6 @@
 
   &__body {
     width: 100%;
-    height: 90vh;
   }
 
   &__content {
@@ -1037,8 +1030,7 @@
 }
 .prices {
   width: 100%;
-  height: 90vh;
-  margin-top: 35vh;
+  margin-top: 10vh;
 
   &__body {
     width: 100%;
@@ -1238,7 +1230,6 @@
 
   &__body {
     width: 100%;
-    height: 95vh;
   }
   &__content {
     width: 100%;
@@ -1308,6 +1299,10 @@
     flex-direction: column;
     align-items: start;
     gap: 2vh;
+  }
+  &__link {
+    text-decoration: none;
+    color: #000;
   }
   &__item {
     font-size: 2vh;
