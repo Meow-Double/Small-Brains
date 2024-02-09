@@ -500,7 +500,7 @@
   &__item {
     width: 80px;
     height: 80px;
-    transition: all 0.3s;
+    transition: all 0.5s;
     transform: translateX(-1200px);
   }
   &__item_animate {
@@ -701,6 +701,7 @@
   width: 100%;
   background-color: rgb(255, 255, 255);
   padding-bottom: 135vh;
+  transition: all 0.5s;
 
   &__body {
     width: 100%;
@@ -732,7 +733,7 @@
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
     font-weight: 800;
-    transition: all 0.3s;
+    transition: all 0.5s;
     cursor: pointer;
 
     &:hover {
