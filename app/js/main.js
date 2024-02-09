@@ -300,7 +300,7 @@ zoneOne.forEach((item) => {
             zoneTwo.style.display = "none";
             openModal();
         }
-        item.style.filter = "drop-shadow(0 0 10px rgb(0, 0, 0))";
+        item.style.filter = "drop-shadow(0 0 10px rgb(255, 255, 255))";
         item.style.border = "none";
     }
 })
@@ -322,5 +322,21 @@ buton.forEach((item, i) => {
     })
     item.addEventListener("mouseleave", () => {
         aniBox[i].style.filter = "none";
+    })
+})
+
+//dark theme
+
+const checkbox = document.querySelector(".theme__checkbox"),
+    head = document.querySelector("head");
+
+checkbox.addEventListener("click", (e) => {
+    if (checkbox.checked) {
+        head.insertAdjacentHTML("beforeend", '<link rel="stylesheet" href="css/dark.theme.css">');
+    }
+    checkbox.addEventListener("click", (e) => {
+        if (!checkbox.checked) {
+            document.querySelector("link[href='css/dark.theme.css']").remove();
+        }
     })
 })
