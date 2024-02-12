@@ -82,9 +82,6 @@
         top: -40px;
     }
 
-    .courses {
-        padding-bottom: 400vh;
-    }
 
     .courses__body {
         margin-top: 15vh;
@@ -107,9 +104,6 @@
         width: 100%;
     }
 
-    .teachers {
-        padding-bottom: 150px;
-    }
 
     .teachers__body {
         margin-top: 3vh;
@@ -118,16 +112,22 @@
     .teachers__content {
         flex-direction: column;
         align-items: start;
-        justify-content: center;
     }
 
     .teachers__info {
         width: 100%;
-        gap: 2vh;
+        align-items: start;
+        justify-content: start;
+        gap: 5vh;
+    }
+
+    .teachers__img {
+        width: 100%;
+        height: 50vh;
     }
 
     .teachers__list {
-        bottom: 31vh;
+        bottom: 85vh;
         left: 2vh;
     }
 
