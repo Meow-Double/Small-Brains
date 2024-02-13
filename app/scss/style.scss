@@ -99,7 +99,7 @@
     padding: 10px;
     gap: 2vh;
     width: 100%;
-    backdrop-filter: blur(50px); 
+    background-color: rgb(32, 32, 32); 
     transition: all 0.5;
   }
   &__title{
