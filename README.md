@@ -3,15 +3,17 @@
 </br>
 
 ##### The following participated in the development:
-<a href="https://github.com/wwghst">wwghst</a>
-<a href="https://github.com/Meow-Double">Meow-Double</a>
+<div><a href="https://github.com/wwghst">wwghst</a></div>
+<div><a href="https://github.com/Meow-Double">Meow-Double</a></div>
 </br>
 
 ##### Technologies that have been used:
-<span>Html, Css, Scss, JavaScript, Gulp</span>
+<div>Html, Css, Scss, JavaScript, Gulp</span>
 </br>
-
+</br>
+  
 ##### Here you can see a demo version of the site:
-<a href="https://meow-double.github.io/Small-Brains/">View demo 👈</a>
+<div><a href="https://meow-double.github.io/Small-Brains/">View demo 👈</a></span>
+
 
 
