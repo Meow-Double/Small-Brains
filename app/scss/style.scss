@@ -274,7 +274,6 @@
   }
   &__icon:hover {
     transform: scale(1.5);
-    margin-top: 3vh;
     rotate: 370deg;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -775,6 +774,7 @@
     flex-direction: row;
     align-items: end;
     justify-content: space-between;
+    padding-bottom: 0px;
   }
   &__texts {
     width: 100vh;
@@ -975,7 +975,7 @@
   }
   .fade {
     animation-name: fade;
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
   }
   @keyframes fade {
     from {

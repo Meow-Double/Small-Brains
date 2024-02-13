@@ -1,4 +1,4 @@
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 450px) {
     .header {
         display: none;
     }
@@ -88,7 +88,7 @@
 
 
     .courses__body {
-        margin-top: 15vh;
+        margin-top: 5vh;
     }
 
     .courses__header {
@@ -97,8 +97,8 @@
         justify-content: center;
         gap: 2vh;
         padding-bottom: 10vh;
-
     }
+
 
     .courses__texts {
         width: 100%;
@@ -131,7 +131,7 @@
     }
 
     .teachers__list {
-        bottom: 85vh;
+        bottom: 40vh;
         left: 2vh;
     }
 
@@ -220,15 +220,6 @@
     .footer__email-two {
         display: none;
     }
-
-    .footer__line {
-        margin-top: 7vh;
-    }
-
-    .footer__main {
-        margin-top: 2vh;
-    }
-
     .footer__teachers {
         display: none;
     }
