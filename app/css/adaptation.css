@@ -96,7 +96,6 @@
         align-items: start;
         justify-content: center;
         gap: 2vh;
-        padding-bottom: 10vh;
     }
 
 
@@ -220,6 +219,7 @@
     .footer__email-two {
         display: none;
     }
+
     .footer__teachers {
         display: none;
     }
