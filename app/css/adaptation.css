@@ -252,19 +252,19 @@
 
     .chat__content {
         width: 45vh;
-        height: 60vh;
-        right: 0vh;
-        bottom: 40vh
+        height: 55vh;
+        right: -2vh;
+        bottom: 44vh
     }
 
     .chat__btn {
         bottom: 0vh;
-        right: 0vh;
+        right: -2vh;
     }
 
     .chat__buttons {
         bottom: 0vh;
-        right: 0vh;
+        right: -2vh;
     }
 
 }
