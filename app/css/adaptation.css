@@ -107,6 +107,9 @@
         width: 100%;
     }
 
+    .teachers {
+        margin-top: 5vh;
+    }
 
     .teachers__body {
         margin-top: 3vh;
