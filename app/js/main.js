@@ -1,7 +1,6 @@
 // import {debounce} from "../utils/debounce.mjs";
 // const {debounce} = require('../utils/debounce.js');
 
-
 function debounce(func, timeout = 300) {
     let timer;
     return (...args) => {
@@ -9,7 +8,28 @@ function debounce(func, timeout = 300) {
         timer = setTimeout(() => { func.apply(this, args); }, timeout);
     };
 };
+//burger menu
 
+const burgerBtn = document.querySelector(".header-mobile__button"),
+    burgerBtnRectangle = document.querySelectorAll(".header-mobile__rectangle"),
+    burgerContent = document.querySelector(".header-mobile__content");
+
+
+burgerBtn.addEventListener("click", () => {
+    if (burgerBtn.clicked) {
+        burgerBtnRectangle[0].classList.add("header-mobile__rectangle-one");
+        burgerBtnRectangle[1].classList.add("header-mobile__rectangle-two");
+        burgerBtnRectangle[2].classList.add("header-mobile__rectangle-three");
+        burgerContent.style.display = "flex";
+    }
+    if (!burgerBtn.clicked) {
+        burgerBtnRectangle[0].classList.remove("header-mobile__rectangle-one");
+        burgerBtnRectangle[1].classList.remove("header-mobile__rectangle-two");
+        burgerBtnRectangle[2].classList.remove("header-mobile__rectangle-three");
+        burgerContent.style.display = "none";
+    }
+    burgerBtn.clicked = !burgerBtn.clicked;
+})
 
 
 //modal

@@ -3,6 +3,10 @@
         display: none;
     }
 
+    .header-mobile {
+        display: flex;
+    }
+
     .home__body {
         flex-direction: column;
         align-items: center;
