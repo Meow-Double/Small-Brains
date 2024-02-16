@@ -1,0 +1,287 @@
+@media screen and (max-width: 450px) {
+    .header {
+        display: none;
+    }
+
+    .header-mobile {
+        display: flex;
+    }
+
+    .home__body {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home__title {
+        font-size: 4vh;
+    }
+
+    .home__text {
+        font-size: 1.5vh;
+    }
+
+    .home__left {
+        gap: 2vh;
+        width: 100%;
+    }
+
+    .home__right {
+        width: 100%;
+    }
+
+    .home__icons {
+        flex-direction: row;
+        gap: 2vh;
+    }
+
+    .home__line {
+        display: none;
+    }
+
+    .form__block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form__title {
+        font-size: 20px;
+    }
+
+    .form__subtitle {
+        font-size: 15px;
+    }
+
+    .our-profile__images {
+        height: 35vh;
+    }
+
+    .our-profile__title {
+        font-size: 20px;
+    }
+
+    .our-profile__text {
+        font-size: 14px;
+    }
+
+    .our-profile__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .our-service__inner {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .jobs__body {
+        gap: 2vh;
+    }
+
+    .jobs__item {
+        width: 50px;
+        height: 50px;
+    }
+
+    .jobs__title {
+        font-size: 4vh;
+        left: 20%;
+        top: -40px;
+    }
+
+
+    .courses__body {
+        margin-top: 5vh;
+    }
+
+    .courses__header {
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+
+    .courses__texts {
+        width: 100%;
+    }
+
+    .courses__btn {
+        width: 100%;
+    }
+
+    .teachers {
+        margin-top: 5vh;
+    }
+
+    .teachers__body {
+        margin-top: 3vh;
+    }
+
+    .teachers__content {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .teachers__info {
+        width: 100%;
+        align-items: start;
+        justify-content: start;
+        gap: 5vh;
+    }
+
+    .teachers__img {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .teachers__list {
+        bottom: 40vh;
+        left: 3vh;
+    }
+
+    .teachers__text {
+        font-size: 2vh;
+    }
+
+    .teachers__name {
+        color: #ffffff;
+    }
+
+    .teachers__name-big {
+        margin-top: 3vh;
+        font-size: 4vh;
+        width: 100%;
+    }
+
+    .steps {
+        margin-top: 5vh;
+    }
+
+    .steps__content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .steps__cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .steps__card-text {
+        display: none;
+    }
+
+    .steps__info {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5vh;
+    }
+
+    .steps__line {
+        width: 2px;
+        height: 100%;
+    }
+
+    .steps__info-blocks {
+        width: 10vh;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .selection {
+        display: none;
+    }
+
+    .prices__subtitle {
+        width: 100%;
+    }
+
+    .prices__content {
+        flex-direction: column;
+        gap: 5vh;
+        padding: 0px;
+        background-color: #ffffff;
+    }
+    .prices__head{
+        width: 100%;
+    }
+
+    .prices__item {
+        padding: 20px;
+        margin-top: 3vh;
+        width: 100%;
+    }
+
+    .prices__name {
+        width: 100%;
+    }
+
+    .footer {
+        margin-top: 15vh;
+    }
+
+    .footer__head {
+        flex-direction: column;
+        align-items: start;
+        gap: 3vh;
+    }
+
+    .footer__contact {
+        width: 100%;
+        font-size: 8px;
+    }
+
+    .footer__email-two {
+        display: none;
+    }
+
+    .footer__teachers {
+        display: none;
+    }
+
+    .footer__title {
+        font-size: 2vh;
+    }
+
+    .footer__link {
+        font-size: 1.5vh;
+    }
+
+    .footer__text {
+        font-size: 1.5vh;
+    }
+
+    .modal__content {
+        margin: 150px 20px;
+        width: 400px;
+    }
+
+    .chat__content {
+        width: 55vh;
+        height: 55vh;
+        right: -2vh;
+        bottom: 44vh
+    }
+    .chat__input{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .chat__btn__send{
+        width: 7vh;
+    }
+    .chat__btn {
+        bottom: 0vh;
+        right: -2vh;
+    }
+
+    .chat__buttons {
+        bottom: 0vh;
+        right: -2vh;
+    }
+
+}

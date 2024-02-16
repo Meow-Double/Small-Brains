@@ -1,0 +1,404 @@
+body {
+    background-color: #1b1a1a;
+}
+
+.home {
+    background-image: url("https://wallpapercave.com/wp/wp10965775.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 120px
+}
+
+.our-profile__images-info {
+    color: #efefef;
+    background-color: #1e1e1e;
+    border: 1px solid #bababa;
+}
+
+.our-profile__images-number::before {
+    background-image: url("../img/plus.svg");
+    filter: invert(1);
+}
+
+.our-profile__images-title {
+    color: #efefef;
+}
+
+.our-profile__subtitle {
+    color: #efefef;
+}
+
+.our-profile__title {
+    color: #efefef;
+}
+
+.our-profile__text {
+    color: #efefef;
+}
+
+.our-profile__info-blocks {
+    image-rendering: pixelated;
+    filter: invert(1);
+}
+
+.our-profile__info-btn {
+    background-color: #1b1a1a;
+    border: 1px solid rgb(255, 255, 255);
+    color: #fff
+}
+
+.our-profile__info-btn:hover {
+    background-color: #ababab;
+    color: #030303
+}
+
+.our-service {
+    filter: invert(1);
+}
+
+.jobs {
+    background-image: url("../img/jobsBg.png");
+    filter: brightness(70%);
+}
+
+.chat__notification {
+    background-color: red;
+    color: #fff;
+    box-shadow: 0 0 10px red;
+}
+
+.chat__btn {
+    background-image: url("../img/chatOpen.png");
+    filter: brightness(40%)
+}
+
+.chat__btn_close {
+    background-image: url("../img/chatClose.png");
+}
+
+.chat__content {
+    background-color: #3f3f3f;
+}
+
+.chat__close {
+    color: #fff;
+}
+
+.chat__buttons {
+    background-color: #fff;
+}
+
+.chat__messages {
+    background-color: #2f2f2f;
+    border-bottom: 1px solid #9f9f9f
+}
+
+.chat ::-webkit-scrollbar-track {
+    background-color: #303030
+}
+
+.chat ::-webkit-scrollbar-thumb {
+    background-color: #8d8d8d;
+}
+
+.chat__message {
+    filter: invert(1);
+}
+
+.chat__input {
+    background-color: #3f3f3f;
+}
+
+.chat__btn__send {
+    background-color: #c7c6c6;
+    filter: invert(1);
+}
+
+.courses {
+    background-color: #1b1a1a;
+}
+
+.courses__header {
+    color: #ffffff
+}
+
+.courses__texts {
+    color: #ffffff
+}
+
+.courses__title-big {
+    color: #ffffff
+}
+
+.courses__btn {
+    border: 1px solid #ffffff;
+    background-color: #1b1a1a;
+    color: #ffffff;
+}
+
+.courses__btn:hover {
+    filter: invert(1);
+}
+
+.courses__item {
+    background-color: #454545;
+
+}
+
+.courses__info {
+    color: rgb(244, 243, 243)
+}
+
+.courses__time {
+    border: 1px solid #e2e1e1;
+}
+
+.courses__level {
+    border: 1px solid #e2e1e1;
+}
+
+.courses__texts-block {
+    color: #ffffff
+}
+
+.courses__btn-big {
+    background-color: #454545;
+    color: #ffffff;
+    border: 1px solid #ffffff
+}
+
+.courses__btn-big:hover {
+    filter: invert(1);
+}
+
+.teachers__title {
+    color: #ffffff;
+}
+
+.teachers__img {
+    border: 1px solid #ffffff
+}
+
+.teachers__name {
+    color: #ffffff;
+}
+
+.teachers__info {
+    color: #ffffff;
+}
+
+.teachers__name-big {
+    color: #ffffff;
+}
+
+.teachers__text {
+    color: #ffffff;
+}
+
+.teachers__links {
+    color: #ffffff;
+}
+
+.teachers__icon {
+    color: #ffffff;
+}
+
+.teachers__icon:hover {
+    animation: none
+}
+
+.selection__title {
+    color: #ffffff;
+}
+
+.selection__subtitle {
+    color: #ffffff;
+}
+
+.selection__content {
+    background-color: #454545;
+}
+
+.selection__box {
+    border: 1px solid #f9f8f8;
+    background-image: url(/img/selectionOne.jpg);
+    filter: brightness(0.5);
+    transition: all 1s;
+}
+
+.selection__box--two {
+    background-image: url(/img/selectionTwo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.selection__items {
+    border: 1px solid #f9f8f8;
+    border-radius: 10px;
+    background-color: #565656
+}
+
+.selection__item {
+    color: #ffffff;
+    background-color: #454545;
+    border: 1px solid #f9f8f8;
+}
+
+.selection__item:hover {
+    filter: invert(1);
+}
+
+.prices__title {
+    color: #fff;
+}
+
+.prices__subtitle {
+    color: #fff;
+}
+
+.prices__content {
+    background-color: #1b1a1a;
+}
+
+.prices__item {
+    background-color: #6c6c6c;
+}
+
+.prices__name {
+    color: #fff;
+    background-color: rgba(207, 207, 207, 0.279);
+}
+
+.prices__price {
+    color: #fff;
+}
+
+.prices__currency {
+    color: #fff;
+}
+
+.prices__list {
+    color: #fff;
+}
+
+.prices__button {
+    background-color: #454545;
+    color: #fff;
+    border: 1px solid #fff
+}
+
+.prices__button:hover {
+    filter: invert(1);
+}
+
+.steps__line {
+    background-color: #f9f9f9;
+}
+
+.steps__info-title {
+    color: #fff;
+}
+
+.steps__inner {
+    color: #fff;
+}
+
+.steps__info-title::before {
+    background-color: #f9f9f9;
+}
+
+.steps__card {
+    border: 1px solid #a0a0a0;
+    background-color: #454545;
+    color: #fff;
+}
+
+.footer__head {
+    color: #fff;
+}
+
+.footer__logo {
+    filter: invert(1);
+}
+
+.footer__social {
+    filter: invert(1);
+}
+
+.footer__line {
+    background-color: #ffffff;
+}
+
+.footer__title {
+    color: #fff;
+}
+
+.footer__link {
+    color: #fff;
+}
+
+.footer__item {
+    color: #fff;
+}
+
+.footer__item:hover {
+    text-decoration: underline
+}
+
+.footer__text {
+    color: #fff
+}
+
+.theme__checkbox {
+    --toggle-size: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 6.25em;
+    height: 3.125em;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 0;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    border-radius: 99em;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--toggle-size);
+    position: fixed;
+    top: 2vh;
+    right: 2vh;
+    z-index: 1000
+}
+
+.theme__checkbox::before {
+    content: "";
+    width: 2.25em;
+    height: 2.25em;
+    position: absolute;
+    top: .438em;
+    left: .438em;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 100%;
+    border-radius: 50%;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s
+}
+
+.theme__checkbox:checked::before {
+    left: calc(100% - 2.25em - .438em);
+    background-position: 0
+}
+
+.theme__checkbox:checked {
+    background-position: 100%
+}
