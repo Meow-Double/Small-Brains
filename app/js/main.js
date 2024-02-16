@@ -332,18 +332,18 @@ items.forEach((item) => {
 })
 
 //little anim on price
-
 const buton = document.querySelectorAll(".prices__button"),
     aniBox = document.querySelectorAll(".prices__item");
-
-buton.forEach((item, i) => {
-    item.addEventListener("mouseenter", () => {
-        aniBox[i].style.filter = "drop-shadow(0 0 10px rgb(34,139,34))";
+if (window.innerWidth > 450) {
+    buton.forEach((item, i) => {
+        item.addEventListener("mouseenter", () => {
+            aniBox[i].style.filter = "drop-shadow(0 0 5px rgb(34,139,34))";
+        })
+        item.addEventListener("mouseleave", () => {
+            aniBox[i].style.filter = "none";
+        })
     })
-    item.addEventListener("mouseleave", () => {
-        aniBox[i].style.filter = "none";
-    })
-})
+}
 
 //dark theme
 

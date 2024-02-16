@@ -52,6 +52,10 @@
         font-size: 15px;
     }
 
+    .our-profile__images {
+        height: 35vh;
+    }
+
     .our-profile__title {
         font-size: 20px;
     }
@@ -129,12 +133,12 @@
 
     .teachers__img {
         width: 100%;
-        height: 50vh;
+        height: 60vh;
     }
 
     .teachers__list {
         bottom: 40vh;
-        left: 2vh;
+        left: 3vh;
     }
 
     .teachers__text {
@@ -146,8 +150,13 @@
     }
 
     .teachers__name-big {
+        margin-top: 3vh;
         font-size: 4vh;
         width: 100%;
+    }
+
+    .steps {
+        margin-top: 5vh;
     }
 
     .steps__content {
@@ -164,21 +173,24 @@
         display: none;
     }
 
+    .steps__info {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5vh;
+    }
+
     .steps__line {
-        position: absolute;
-        left: 35vh;
-        top: 1.5vh;
         width: 2px;
         height: 100%;
     }
 
     .steps__info-blocks {
-        width: 8vh;
+        width: 10vh;
         height: 100%;
         flex-direction: column;
         justify-content: space-around;
-        left: 31.2vh;
-        top: 1.5vh;
     }
 
     .selection {
@@ -195,13 +207,18 @@
         padding: 0px;
         background-color: #ffffff;
     }
+    .prices__head{
+        width: 100%;
+    }
 
     .prices__item {
+        padding: 20px;
+        margin-top: 3vh;
         width: 100%;
     }
 
     .prices__name {
-        width: 110%;
+        width: 100%;
     }
 
     .footer {
@@ -245,12 +262,18 @@
     }
 
     .chat__content {
-        width: 45vh;
+        width: 55vh;
         height: 55vh;
         right: -2vh;
         bottom: 44vh
     }
-
+    .chat__input{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .chat__btn__send{
+        width: 7vh;
+    }
     .chat__btn {
         bottom: 0vh;
         right: -2vh;
