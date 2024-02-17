@@ -13,7 +13,7 @@
 </br>
   
 ##### Here you can see a demo version of the site:
-<div><a href="https://meow-double.github.io/Small-Brains/">View demo 👈</a></span>
+<div><a target="_blank" href="https://smallbrains.netlify.app/">View demo 👈</a></span>
 
 
 
