@@ -346,17 +346,23 @@ if (window.innerWidth > 450) {
 }
 
 //dark theme
-
 const checkbox = document.querySelector(".theme__checkbox"),
     head = document.querySelector("head");
 
-checkbox.addEventListener("click", (e) => {
+if (localStorage.getItem("theme") === "true") {
+    checkbox.checked = true;
+    head.insertAdjacentHTML("beforeend", '<link rel="stylesheet" href="css/dark.theme.css">');
+}
+
+checkbox.addEventListener("change", (e) => {
+    localStorage.setItem("theme", e.target.checked);
     if (checkbox.checked) {
         head.insertAdjacentHTML("beforeend", '<link rel="stylesheet" href="css/dark.theme.css">');
     }
-    checkbox.addEventListener("click", (e) => {
-        if (!checkbox.checked) {
-            document.querySelector("link[href='css/dark.theme.css']").remove();
-        }
-    })
-})
+});
+
+checkbox.addEventListener("change", (e) => {
+    if (!checkbox.checked) {
+        document.querySelector("link[href='css/dark.theme.css']").remove();
+    }
+});
